@@ -1,0 +1,5 @@
+com\restapidemo\restapiwithswagger\RestapiwithswaggerApplication.class
+com\restapidemo\restapiwithswagger\employeeservice\EmployeeService.class
+com\restapidemo\restapiwithswagger\model\Employee.class
+com\restapidemo\restapiwithswagger\endpoint\RestEndpoint.class
+com\restapidemo\restapiwithswagger\employeeRepository\EmployeeRepository.class
