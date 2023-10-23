@@ -14,14 +14,19 @@ import org.springframework.web.bind.annotation.RestController;
 import com.restapidemo.restapiwithswagger.employeeservice.EmployeeService;
 import com.restapidemo.restapiwithswagger.model.Employee;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @RequestMapping("/")
+@Api(description = "Added restEndpoint")
 public class RestEndpoint {
 
 	@Autowired
 	private EmployeeService empService;
 	
 	@PostMapping("/addEmp")
+	@ApiOperation(nickname = "AddEmployye", value = "Employee")
 	public Employee addEmployee(@RequestBody Employee emp) {
 		return empService.saveEmployee(emp); 
 	}
